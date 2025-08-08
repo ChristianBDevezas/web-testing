@@ -105,7 +105,7 @@
 /*Media Queries - Banner*/
 @media(max-width: 1050px) {
     .banner {
-        height: 40vh;
+        height: 70vh;
     }
 
     .banner__slider {
@@ -124,6 +124,23 @@
     }
 }
 
+@media(max-width: 1024px) {
+    .banner {
+        height: 40vh;
+    }
+
+    .banner__slider {
+        width: 160px;
+        height: 250px;
+    }
+}
+
+@media(max-width: 820px) {
+    .banner {
+        height: 45vh;
+    }
+}
+
 @media(max-width: 768px) {
     .banner {
         margin-top: calc(4.5rem + .9vw);
@@ -132,7 +149,7 @@
 
     .banner__slider {
         width: 130px;
-        height: 195px;
+        height: 230px;
         top: 16%;
         left: calc(50% - 50px);
     }
@@ -147,10 +164,6 @@
 }
 
 @media(max-width: 500px) {
-    .banner {
-        height: 45vh;
-    }
-
     .banner__slider {
         width: 100px;
         height: 175px;
@@ -167,7 +180,7 @@
     .banner__slider {
         width: 90px;
         height: 150px;
-        left: calc(50% - 50px);
+        left: calc(52% - 50px);
     }
 
     .banner__slider .banner__item {
@@ -175,22 +188,21 @@
     }
 }
 
-/*Height Control*/
-/* @media(min-width: 768px) and (max-height: 1370px) {
-    .banner {
-        height: 50vh;
-    }
-} */
-
-@media(min-width: 450px) and (max-height: 900px) {
+/*Height Control - Star Wars*/
+@media (min-width: 450px) and (max-height: 900px) {
     .banner {
         height: 100vh;
+    }
+}
+
+@media (min-width: 1366px) and (max-height: 1024px) {
+    .banner {
+        height: 55vh;
     }
 }
 /**end BANNER **/
 
 /** OPINION **/
-/*commented after adding banner section*/
 /* .opinion {
     padding-top: calc(2rem + .9vw);
     margin-top: calc(5.23rem + .9vw);
