@@ -243,6 +243,10 @@ p.comment {
 /** end comment class **/
 
 /** BRANCHES **/
+.branches {
+    margin-top: 4rem;
+}
+
 .branches__content__gallery {
     margin: -4px auto 0 auto;
     display: grid;
