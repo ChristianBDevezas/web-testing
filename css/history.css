@@ -1083,7 +1083,6 @@ section.motorcycles {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 .motorcycles__content__container {
@@ -1126,13 +1125,14 @@ section.motorcycles {
     padding-right: 1px;
 }
 
-article.thumbnail {
+article.motorcycles__thumbnail {
     flex: 0 0 auto;
     /* flex-shrink: 0; */
     width: 320px;
     cursor: pointer;
     margin: 5px;
-    border: 2px solid var(--black-color);
+    border: 2px solid var(--white-color);
+    box-shadow: 0 0 0 2px var(--black-color), 0 0 0 3px var(--black-color);
     border-radius: 5px;
     overflow: hidden;
     transform: scale(.95);
@@ -1141,27 +1141,28 @@ article.thumbnail {
     position: absolute;
     top: 0;
 }
-article.thumbnail:hover {
+article.motorcycles__thumbnail:hover {
     transform: scale(1);
     box-shadow: 0 0 4px var(--dark-blue-color), 0 0 0 2px var(--dark-blue-color), 0 0 0 2px var(--dark-blue-color);
 }
 
-.thumbnail img {
+.motorcycles__thumbnail img {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
-    border-bottom: 2px solid var(--black-color);
+    border-bottom: 2px solid var(--white-color);
 }
 
 .product-details {
     text-align: center;
-    padding-bottom: .85rem;
+    padding: .5rem 0 .8rem 0;
+    background: var(--black-color);
+    color: var(--white-color);
 }
 
 .product-details h2 {
     font-size: 1rem;
     font-weight: 500;
-    margin-top: 5px;
 }
 
 .product-details p {
@@ -1174,16 +1175,14 @@ article.thumbnail:hover {
     font-size: .9rem;
     text-decoration: none;
     background-color: var(--dark-blue-color);
-    color: var(--white-color);
     padding: .3rem .7rem;
-    border: 2px solid transparent;
+    border: 2px solid var(--white-color);
     border-radius: 3px;
     transition: all .3s;
 }
 .product-details a:hover {
     background-color: var(--dark-orange-color);
     color: var(--black-color);
-    border: 2px solid var(--black-color);
 }
 
 /*Media Queries - Motorcycles*/
@@ -1197,7 +1196,7 @@ article.thumbnail:hover {
         height: 348px;
     }
 
-    article.thumbnail {
+    article.motorcycles__thumbnail {
         width: 250px;
     }
 
@@ -1221,7 +1220,7 @@ article.thumbnail:hover {
         height: 290px;
     }
     
-    article.thumbnail {
+    article.motorcycles__thumbnail {
         width: 180px;
     }
 }

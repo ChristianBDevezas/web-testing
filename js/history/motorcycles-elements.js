@@ -3,7 +3,7 @@ import { convertPixelNumberToNumber } from "./motorcycles-general.js";
 export function createElements(product) {
     console.log("createElements product", product);  
     const thumbnail = document.createElement("article");
-    thumbnail.classList.add("thumbnail");
+    thumbnail.classList.add("motorcycles__thumbnail");
     thumbnail.setAttribute("name", product.name);
 
     const image = document.createElement("img");

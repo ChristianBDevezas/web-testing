@@ -26,7 +26,7 @@ for(let productItem of productsDatabase) {
 slider.setAttribute("childrenCount", childrenCount);
 
 //thumbnails generated after for of loop
-let thumbnails = document.querySelectorAll(".thumbnail");
+let thumbnails = document.querySelectorAll(".motorcycles__thumbnail");
 
 // nextBtn.addEventListener("click", nextButtonClick);
 shouldItClick(nextBtn, nextButtonClick);
