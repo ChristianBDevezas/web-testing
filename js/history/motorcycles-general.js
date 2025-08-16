@@ -13,7 +13,7 @@ export function convertPixelNumberToNumber(value) {
 export function shouldItClick(buttonTag, callback) {
 	buttonTag.shouldItClick = true;
 
-	buttonTag.addEventListener("click", (e) => {
+	buttonTag.onclick = (e) => {
 		console.log("button click - before ", buttonTag.shouldItClick);
 		
 		if(buttonTag.shouldItClick === false) {
@@ -29,5 +29,5 @@ export function shouldItClick(buttonTag, callback) {
 		setTimeout(() => {
 			buttonTag.shouldItClick = true;
 		}, 500);
-	});
+	};
 }
